@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elm</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <!-- Top Bar -->
+    <nav class="navbar navbar-expand-lg top-nav-custom top-nav">
+        <a class="navbar-brand" href="#">
+            <a class="black-link" href="#">Elm Stock</a>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active mr-1">
+                    <a class="nav-link active font-weight-bold" href="#">عربي</a>
+                </li>                
+                <li class="nav-item mr-1">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#searchModal"><i class="bi bi-search"></i></a>
+                </li>
+                <li class="nav-item mr-1">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item mr-1">
+                    <a class="nav-link" href="#">Support Team</a>
+                </li>
+                <li class="nav-item mr-1">
+                    <a class="nav-link" href="#">Suppliers</a>
+                </li>
+                <li class="nav-item mr-1">
+                    <a class="nav-link" href="#">Become a Partner</a>
+                </li>
+                <li class="nav-item mr-1">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white main-navbar">
+        <a class="navbar-brand" href="#">
+            <img src="elm-logo-01.png" alt="Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown active mr-1">
+                    <a class="nav-link dropdown-toggle active" href="#" id="aboutElmDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        About Elm
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Overview</a>
+                        <a class="dropdown-item" href="#">Our Values</a>
+                        <a class="dropdown-item" href="#">Leadership Principles</a>
+                        <a class="dropdown-item" href="#">Factsheet</a>
+                        <a class="dropdown-item" href="#">Company Leadership</a>
+                    </div>
+                </li>
+                <li class="nav-item mr-1 active">
+                    <a class="nav-link active" href="#">Business</a>
+                </li>
+                <li class="nav-item mr-1 active">
+                    <a class="nav-link active" href="#">Sustainability</a>
+                </li>
+                <li class="nav-item mr-1 active">
+                    <a class="nav-link active" href="#">Investor Relations</a>
+                </li>
+                <li class="nav-item mr-1 active">
+                    <a class="nav-link active" href="#">Media Center</a>
+                </li>
+                <li class="nav-item mr-1 active">
+                    <a class="nav-link active" href="#">Recruitment</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section d-flex align-items-center mb-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <img src="tatawor-img.svg" alt="Tatawor" class="img-fluid">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center margin-left">
+                    <h1 class="mb-3">We drive the digital transformation journey forward</h1>
+                    <p class="mb-3">by delivering innovative, advanced services and comprehensive digital solutions.</p>
+                    <div class="d-flex justify-content-start align-items-center">
+                        <button class="clipped-btn">Explore our Services</button>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Influence Section -->
+    <div class="our-influence-section py-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="influence-box text-left p-4 h-100">
+                        <h3 class="mb-3">Creativity</h3>
+                        <p>At Elm, we are dedicated to leveraging the latest technologies while adhering to principles that promote social inclusion and equal opportunities in the communities we serve. We emphasize innovation and creative thinking to deliver outstanding results.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="influence-box text-left p-4 h-100">
+                        <h3 class="mb-3">Social Impact</h3>
+                        <p>Elm strives to cultivate a holistic digital culture that bridges communities through sustainable digital innovation. Our commitment is to meet stakeholders' evolving needs, empowering them to achieve their goals with confidence and efficiency</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="influence-box text-left p-4 h-100">
+                        <h3 class="mb-3">Sustainability</h3>
+                        <p>Elm puts sustainability at the heart of everything we do. Sustainability principles have always been the driving force behind our progress, diversity, and growth. We are committed to integrating these principles into all our operations while upholding responsibility and transparency. Through the development of a comprehensive framework, we aim to realize a digital future that aligns with the needs of both local and global communities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section 2 -->
+    <div class="hero-section d-flex align-items-center mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <img src="ebtkar-img.svg" alt="Tatawor" class="img-fluid">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center margin-left">
+                    <h1 class="mb-3">Innovation and Research</h1>
+                    <p class="mb-3">Elm aims to manage and execute the entire product lifecycle, from identifying and developing comprehensive solutions to launching successful products.</p>
+                    <div class="d-flex justify-content-start align-items-center">
+                        <button class="clipped-btn">Read More</button>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light text-center py-3">
+        <div class="container">
+            <img src="elm-logo-01.png" alt="Elm Logo" class="footer-logo">
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="searchInput" placeholder="Type your search query here...">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: "Segoe UI Semilight", "Segoe UI", "Segoe", Tahoma, Helvetica, Arial, sans-serif;}
+
+.navbar-brand .logo {
+    width: 137px; 
+    margin-left: 50px;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+}
+
+.hero-section p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 20px; 
+}
+
+.our-influence-section {
+    background-color: #f8f9fa;
+}
+
+.influence-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.black-link {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 34px;
+    margin-bottom: 25px;
+    margin-top: 8px;
+}
+
+.custom-btn{
+    background-color: blueviolet;
+    border-color: blueviolet;
+
+}
+.footer {
+    background-color: #f8f9fa;
+}
+
+.footer-logo {
+    width: 100px; 
+    margin-bottom: 10px;
+}
+
+
+
+.navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+}
+.navbar-nav .dropdown-menu {
+    margin-top: 0;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+.main-navbar .nav-link {
+    position: relative;
+    transition: color 0.3s;
+    font-weight: 500;
+
+}
+.main-navbar .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    transition: width 0.3s;
+}
+.main-navbar .nav-link:hover::before {
+    width: 100%;
+}
+.top-nav .nav-link {
+    font-size: 14px; 
+    font-weight: 500;
+    color: black;
+}
+
+.main-navbar{
+    margin-bottom:0 ;
+    padding: 0;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+
+}
+
+
+.top-nav-custom {
+    background-color: #e4e8f5;
+    padding: 0;
+}
+.top-nav-custom .nav-link {
+    color: gray;
+    transition: color 0.3s ease-in-out;
+    padding: 0;
+    margin-bottom: 33px;
+    margin-top: 15px;
+    margin-right: 21px; 
+
+
+
+}
+.top-nav-custom .navbar-nav li:last-child .nav-link {
+margin-right: 43px ;
+}
+
+
+
+.top-nav-custom .nav-link i {
+font-size: 20px;
+vertical-align: middle;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.top-nav-custom .nav-link:hover {
+    background-color: transparent;
+    color: black;
+}
+.top-nav-custom .navbar-nav .nav-item:first-child .nav-link {
+    font-weight: bold;
+    color: black;
+}
+.top-nav-custom .nav-item {
+margin-right: 0;  
+}
+
+.clipped-btn {
+    background-color: #6a1b9a;
+color: white;
+padding: 12px 24px;
+border: none;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+transition: background-color 0.3sease;
+clip-path: polygon(20px 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0% 100%, 0% 20px);
+}
+
+.clipped-btn:hover {
+background-color: #4a148c; 
+}
+.clipped-btn::before,
+.clipped-btn::after {
+content: '';
+position: absolute;
+width: 20px; 
+height: 20px;
+background-color: white; 
+}
+
+.clipped-btn::before {
+top: 0;
+left: 0;
+clip-path: polygon(0 0, 100% 0, 0 100%); 
+}
+
+.clipped-btn::after {
+bottom: 0;
+right: 0;
+clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.clipped-btn:hover {
+background-color: #4a148c; 
+}
