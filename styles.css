@@ -12,23 +12,49 @@ body {
 }
 
 .hero-section {
-    background-color: #f8f9fa;
+    background-color: #fcfcff;
     padding: 100px 0;
     margin-top: 0 !important;
     padding-top: 0 !important;
+   
 }
 
 .hero-section h1 {
     font-size: 48px;
     margin-bottom: 20px;
-    margin-top: 20px; 
+    margin-top: 140px; 
+    font-weight: 400;
 }
 
 .hero-section p {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 30px;
-    margin-top: 20px; 
+
 }
+.hero-section .hero-image {
+    width: auto;
+    height: 600px;  
+    margin-top: 65px;
+    margin-left: 200px;
+
+}
+
+.hero-section .col-md-6 {
+    padding-right: 50px;  
+    padding-left: 50px;   
+}
+
+.hero-section .col-md-6.d-flex.justify-content-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hero-section .col-md-6.d-flex.flex-column.text-right {
+    text-align: right;
+}
+
+
+
 
 .our-influence-section {
     background-color: #f8f9fa;
@@ -194,4 +220,86 @@ body {
 
 .clipped-btn:hover {
     background-color: #4a148c; 
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+    .navbar-brand .logo {
+        margin-left: 10px;
+    }
+
+    .hero-section {
+        padding: 40px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 28px; 
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
+
+    .main-navbar {
+        margin-right: 10px;
+    }
+
+    .top-nav-custom .nav-link {
+        margin-right: 10px; 
+    }
+
+    .clipped-btn {
+        padding: 8px 16px; 
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand .logo {
+        width: 100px; 
+        margin-left: 5px;
+    }
+
+    .hero-section {
+        padding: 20px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 24px; 
+    }
+
+    .hero-section p {
+        font-size: 14px;
+    }
+
+    .main-navbar {
+        margin-right: 5px; 
+    }
+
+    .top-nav-custom .nav-link {
+        margin-right: 5px; 
+    }
+
+    .clipped-btn {
+        padding: 6px 12px; 
+        font-size: 10px;
+    }
+
+    .main-navbar .nav-link::before {
+        height: 4px; 
+        top: -10px; 
+    }
+}
+
+/* Media Query for Large Displays (e.g., min-width: 1200px) */
+@media (min-width: 1200px) {
+
+    .main-navbar {
+        margin-left: 200px;
+        margin-right: 250px; 
+    }
+    .top-nav-custom  {
+        padding-left: 200px; 
+        padding-right: 200px; 
+    }
 }
