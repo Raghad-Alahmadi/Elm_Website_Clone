@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-    font-family: "Segoe UI Semilight", "Segoe UI", "Segoe", Tahoma, Helvetica, Arial, sans-serif;}
+    font-family: "Segoe UI Semilight", "Segoe UI", "Segoe", Tahoma, Helvetica, Arial, sans-serif;
+}
 
 .navbar-brand .logo {
     width: 137px; 
@@ -11,23 +11,36 @@ body {
 }
 
 .hero-section {
-    background-color: #f8f9fa;
-    padding: 100px 0;
-    margin-top: 0 !important;
-    padding-top: 0 !important;
+    background-color: #fcfcff;
+    padding: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-section h1 {
     font-size: 48px;
     margin-bottom: 20px;
-    margin-top: 20px; 
+    font-weight: 400;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .hero-section p {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 30px;
-    margin-top: 20px; 
+    margin-left: 70px;
+    margin-right: 70px;
 }
+
+.hero-section .hero-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-left: 35px;
+}
+
 
 .our-influence-section {
     background-color: #f8f9fa;
@@ -51,8 +64,8 @@ body {
 .custom-btn{
     background-color: blueviolet;
     border-color: blueviolet;
-
 }
+
 .footer {
     background-color: #f8f9fa;
 }
@@ -62,11 +75,10 @@ body {
     margin-bottom: 10px;
 }
 
-
-
 .navbar-nav .nav-item:hover .dropdown-menu {
     display: block;
 }
+
 .navbar-nav .dropdown-menu {
     margin-top: 0;
 }
@@ -74,45 +86,49 @@ body {
 .dropdown-toggle::after {
     display: none;
 }
+
+.main-navbar {
+    margin-bottom: 0;
+    padding: 0;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
 .main-navbar .nav-link {
     position: relative;
     transition: color 0.3s;
     font-weight: 500;
-
+    padding: 10px 15px; 
 }
+
 .main-navbar .nav-link::before {
     content: '';
     position: absolute;
-    width: 0;
-    height: 2px;
-    top: 0;
-    left: 0;
-    background-color: blue;
-    transition: width 0.3s;
+    width: 100%; 
+    height: 6px; 
+    top: -20px;
+    left: 0; 
+    background-color: rgb(46, 159, 218);
+    opacity: 0; 
+    transition: opacity 0.6s ease;
 }
+
 .main-navbar .nav-link:hover::before {
-    width: 100%;
+    opacity: 1; 
 }
+
 .top-nav .nav-link {
     font-size: 14px; 
     font-weight: 500;
     color: black;
 }
 
-.main-navbar{
-    margin-bottom:0 ;
-    padding: 0;
-    margin-right: 40px;
-    margin-top: 10px;
-    margin-bottom: 12px;
-
-}
-
-
 .top-nav-custom {
     background-color: #e4e8f5;
     padding: 0;
 }
+
 .top-nav-custom .nav-link {
     color: gray;
     transition: color 0.3s ease-in-out;
@@ -120,75 +136,183 @@ body {
     margin-bottom: 33px;
     margin-top: 15px;
     margin-right: 21px; 
-
-
-
 }
+
 .top-nav-custom .navbar-nav li:last-child .nav-link {
-margin-right: 43px ;
+    margin-right: 43px ;
 }
-
-
 
 .top-nav-custom .nav-link i {
-font-size: 20px;
-vertical-align: middle;
-display: inline-flex;
-align-items: center;
-justify-content: center;
+    font-size: 20px;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
-
 
 .top-nav-custom .nav-link:hover {
     background-color: transparent;
     color: black;
 }
+
 .top-nav-custom .navbar-nav .nav-item:first-child .nav-link {
     font-weight: bold;
     color: black;
 }
+
 .top-nav-custom .nav-item {
-margin-right: 0;  
+    margin-right: 0;  
 }
 
 .clipped-btn {
-    background-color: #6a1b9a;
-color: white;
-padding: 12px 24px;
-border: none;
-font-size: 16px;
-font-weight: bold;
-cursor: pointer;
-position: relative;
-overflow: hidden;
-transition: background-color 0.3sease;
-clip-path: polygon(20px 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0% 100%, 0% 20px);
+    background-color: #522f7d;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    clip-path: polygon(20px 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0% 100%, 0% 20px);
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 55px;
 }
 
 .clipped-btn:hover {
-background-color: #4a148c; 
+    background-color: #4a148c; 
 }
+
 .clipped-btn::before,
 .clipped-btn::after {
-content: '';
-position: absolute;
-width: 20px; 
-height: 20px;
-background-color: white; 
+    content: '';
+    position: absolute;
+    width: 20px; 
+    height: 20px;
+    background-color: white; 
 }
 
 .clipped-btn::before {
-top: 0;
-left: 0;
-clip-path: polygon(0 0, 100% 0, 0 100%); 
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 0 100%); 
 }
 
 .clipped-btn::after {
-bottom: 0;
-right: 0;
-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
 }
 
 .clipped-btn:hover {
-background-color: #4a148c; 
+    background-color: #4a148c; 
+}
+
+
+
+
+/* Dropdown Menu */
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #e4e8f5; 
+    color: white;
+    padding: 10px 20px;
+    clip-path: polygon(20px 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0% 100%, 0% 20px); /* Clipped corners */
+    width: max-content;
+    display: none; 
+}
+
+.button:hover + .dropdown-menu {
+    display: block; 
+}
+
+
+
+
+
+/* responsiveness */
+@media (max-width: 768px) {
+    .navbar-brand .logo {
+        margin-left: 10px;
+    }
+
+    .hero-section {
+        padding: 40px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 28px; 
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
+
+    .main-navbar {
+        margin-right: 10px;
+    }
+
+    .top-nav-custom .nav-link {
+        margin-right: 10px; 
+    }
+
+    .clipped-btn {
+        padding: 8px 16px; 
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand .logo {
+        width: 100px; 
+        margin-left: 5px;
+    }
+
+    .hero-section {
+        padding: 20px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 24px; 
+    }
+
+    .hero-section p {
+        font-size: 14px;
+    }
+
+    .main-navbar {
+        margin-right: 5px; 
+    }
+
+    .top-nav-custom .nav-link {
+        margin-right: 5px; 
+    }
+
+    .clipped-btn {
+        padding: 6px 12px; 
+        font-size: 10px;
+    }
+
+    .main-navbar .nav-link::before {
+        height: 4px; 
+        top: -10px; 
+    }
+}
+
+/* Media Query for Large Displays (e.g., min-width: 1700px) */
+@media (min-width: 1700px) {
+
+    .main-navbar {
+        margin-left: 200px;
+        margin-right: 250px; 
+    }
+    .top-nav-custom  {
+        padding-left: 200px; 
+        padding-right: 200px; 
+    }
 }

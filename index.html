@@ -87,22 +87,32 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div class="hero-section d-flex align-items-center mb-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <img src="tatawor-img.svg" alt="Tatawor" class="img-fluid">
-                </div>
-                <div class="col-md-6 d-flex flex-column justify-content-center margin-left">
-                    <h1 class="mb-3">We drive the digital transformation journey forward</h1>
-                    <p class="mb-3">by delivering innovative, advanced services and comprehensive digital solutions.</p>
-                    <div class="d-flex justify-content-start align-items-center">
-                        <button class="clipped-btn">Explore our Services</button>                    </div>
+<!-- Hero Section -->
+
+<div class="hero-section d-flex mb-1">
+    <div class="container-fluid">
+        <div class="row gx-5"> 
+            <!-- Left Column (Image) -->
+            <div class="col-md-6 mb-6">
+                <!-- Image -->
+                <img src="tatawor-img.svg" alt="Tatawor" class="hero-image img-fluid">
+            </div>
+            <!-- Right Column (Text) -->
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+                <!-- Text -->
+                <h1 class="mb-3">We drive the digital transformation journey forward</h1>
+                <p class="mb-3">by delivering innovative,<br> advanced services and comprehensive digital solutions.</p>
+                <div class="d-flex justify-content-start align-items-center">
+                    <button class="clipped-btn">Explore our Services</button>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+    
+    
+
 
     <!-- Our Influence Section -->
     <div class="our-influence-section py-5 mb-5">
@@ -156,30 +166,27 @@
         </div>
     </footer>
 
-    <!-- Search Modal -->
-    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="searchModalLabel">Search</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="searchInput" placeholder="Type your search query here...">
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Search</button>
-                </div>
+  <!-- Search Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content p-3">
+            <!-- Search Field  -->
+            <div class="d-flex align-items-center w-100">
+                <input type="text" class="form-control border-0" id="searchInput" placeholder="Search...">
+                <button class="btn" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
+            <!-- Close Button (X) -->
+            <button type="button" class="close position-absolute top-0 end-0 p-3" data-dismiss="modal">
+                <span>&times;</span>
+            </button>
         </div>
     </div>
+</div>
+
+<!-- FontAwesome for Icons -->
+<script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
